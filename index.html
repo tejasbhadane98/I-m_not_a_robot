@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm not a robot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header><h1>Verify Human</h1></header>
+        <div id="image">
+            <img src="1.jpg" alt="1" id="i1" data-ns-test="img1" class="images" onclick="select(src,id)">
+            <img src="2.jpg" alt="2" id="i2" data-ns-test="img2" class="images" onclick="select(src,id)">
+            <img src="3.jpg" alt="3" id="i3" data-ns-test="img3" class="images" onclick="select(src,id)">
+            <img src="4.jpg" alt="4" id="i4" data-ns-test="img4" class="images" onclick="select(src,id)">
+            <img src="5.jpg" alt="5" id="i5" data-ns-test="img5" class="images" onclick="select(src,id)">
+            <img src="" alt="6" data-ns-test="img6" id="i6" class="images" onclick="select(src,id)">
+        </div>
+        <div>
+            <h3 id="text">Please click on the identical tiles to verify that you are not a robot</h3>
+        </div>
+        <div class="buttons">
+            <button id="reset" style="display: none;" onclick="reload()">Reset</button>
+            <button id="btn" style="display: none;" onclick="verifyFun()">Verify</button>
+        </div>
+        <div>
+            <p id="para1" style="display: none;"><b>You are a human. Congratulations!</b></p>
+            <p id="para2" style="display: none;"><b>We can't verify you as a human. You selected the non-identical tiles.</b></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
